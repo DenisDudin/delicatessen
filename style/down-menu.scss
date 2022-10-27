@@ -1,0 +1,128 @@
+.down-menu {
+
+    &__wrapper {
+        max-width: 95%;
+        margin: 40px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 550px) {
+            margin: 30px auto;
+        }
+
+        @media screen and (max-width: 413px) {
+            flex-direction: column;
+            grid-gap: 15px;
+        }
+    }
+
+    &__inner {
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 15px 0;
+        }
+
+        @media screen and (max-width: 413px) {
+            grid-gap: 15px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__link {
+        align-self: center;
+        padding-bottom: 2px;
+        position: relative;
+        margin: 0 25px;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 110%;
+        color: #926C49;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 2.2rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin: 0 15px;
+            font-size: 1.8rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        @media screen and (max-width: 550px) {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 413px) {
+            order: 0;
+            font-size: 1.7rem;
+        }
+
+        &:before, 
+        &:after, 
+        & > span:before, 
+        & > span:after {
+            content: '';
+            position: absolute;
+            transition: transform .5s ease;
+          }
+
+        &:before {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #926C49;
+            transform: scaleX(0);
+        }
+        
+        &:hover:before {
+            transform: scaleX(1);
+        }
+    }
+
+    &__logo-container {
+        max-width: 200px;
+        width: 25%;
+        margin: 0 50px;
+
+        @media screen and (max-width: 1200px) {
+            margin: 0 40px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin: 0 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 35%;
+        }
+
+        @media screen and (max-width: 550px) {
+            margin: 0 10px;
+            width: 40%;
+        }
+
+        @media screen and (max-width: 413px) {
+            width: 60%;
+            order: -1;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+    }
+}

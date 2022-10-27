@@ -1,0 +1,136 @@
+.category {
+  position: relative;
+  padding: 100px 0;
+}
+
+.category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .category-list {
+    margin: 70px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-list {
+    margin: 70px auto 50px;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .category-list {
+    margin: 40px auto 30px;
+  }
+}
+
+.category-list__item {
+  margin: 0 20px 50px;
+  width: 21%;
+}
+
+@media screen and (max-width: 1000px) {
+  .category-list__item {
+    margin: 0 15px 30px;
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-list__item {
+    margin: 0 10px 30px;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .category-list__item {
+    margin: 0 15px 20px;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .category-list__item {
+    margin: 0 10px 15px;
+  }
+}
+
+.category-list__img-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(white, white) padding-box, linear-gradient(94.25deg, #1eca1b 10.49%, #198f21 94.61%) border-box;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .category-list__img-container {
+    height: 20vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .category-list__img-container {
+    height: 18vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category-list__img-container {
+    height: 24vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .category-list__img-container {
+    margin-bottom: 10px;
+    height: 34vw;
+  }
+}
+
+.category-list__name {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 120%;
+  color: #926C49;
+}
+
+@media screen and (max-width: 1000px) {
+  .category-list__name {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .category-list__name {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .category-list__name {
+    font-size: 1.5rem;
+    line-height: 110%;
+  }
+}
+/*# sourceMappingURL=category.css.map */
