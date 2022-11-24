@@ -1,1 +1,1 @@
-# rakityan-delicacies
+The structure of the files is so bad, because the site is superimposed on bitrix, so you have to adjust to its features.

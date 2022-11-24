@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <br>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="/style/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+  
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="/style/style.css">
+	  <script src="/script/modernizr.js"></script>
+    <title>Ракитянские деликатесы</title>
+  </head>
+  <body>
+    <main>
+      <div class="top-container">
+        <nav>
+          <div class="container">
+            <div class="nav-container">
+              <div class="logo-container">
+                <img src="/img/logo.png" alt="логотип компании" class="logo" />
+              </div>
+
+              <div class="nav-links">
+                <a href="#" class="nav-links__item prices">Прайс</a>
+                <a href="#category" class="nav-links__item">Продукция</a>
+                <a href="#contacts" class="nav-links__item">Контакты</a>
+                <div class="nav-links__phone">+7 (952) 435-25-05</div>
+              </div>
+
+              <label class='menu-container'>
+                <input type='checkbox' name='menu-button' onclick='openDrawer();'>
+                <span></span> 
+                <span></span>
+                <span></span>
+              </label>
+              
+              <div class='menu-drawer' id='menu-drawer' opened=false>
+                <ul>
+                  <a href="#" class="nav-links__item prices">Прайс</a>
+                  <a href="#category" class="nav-links__item">Продукция</a>
+                  <a href="#contacts" class="nav-links__item">Контакты</a>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </nav>
+
+        <header class="header">
+          <div class="header-container container">
+            <h1 class="title">Ракитянские <br> деликатесы</h1>
+
+            <div class="line-img-container">
+              <img src="/img/curls.svg" alt="#" class="line-img line-img__up" />
+            </div>
+            <p class="header-text">качество,<br>основанное<br>на традициях</p>
+            <div class="line-img-container">
+              <img src="/img/curls.svg" alt="#" class="line-img" />
+            </div>
+          </div>
+        </header>
+        
+        <!-- <section id="about" class="about">
+          <div class="about-container container">
+            <h3 class="about-title">Несколько слов о нас</h3>
+            <div class="about-block">
+              <div class="about-block__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempore unde magnam vitae? Aperiam, laboriosam, odio repellat
+                iure eos cumque quaerat nihil libero mollitia, minus incidunt
+                ipsa dolore architecto. Accusamus, voluptatibus. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Animi eveniet
+                soluta maiores in mollitia, ullam excepturi provident delectus
+                adipisci nisi, voluptatem laborum voluptas ab, voluptatibus amet
+                suscipit reiciendis consequatur saepe.
+              </div>
+            </div>
+            
+          </div>
+        </section> -->
+      </div>
+
+      <section id="category" class="category scrollto">
+        <div class="container">
+          <div class="about-block">
+            <h3 class="about-title">О нас</h3>
+            <div class="about-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Tempore unde magnam vitae? Aperiam, laboriosam, odio repellat
+              iure eos cumque quaerat nihil libero mollitia, minus incidunt
+              ipsa dolore architecto. Accusamus, voluptatibus. Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Animi eveniet
+              soluta maiores in mollitia, ullam excepturi provident delectus
+              adipisci nisi, voluptatem laborum voluptas ab, voluptatibus amet
+              suscipit reiciendis consequatur saepe.
+            </div>
+         </div>
+          
+          <div class="category-list">
+            <div class="category-list-item">
+              <div class="category-list-item__name">Вареные колбасы:</div>
+              <ul class="category-list-item__products">
+                <li>Докторская особая</li>
+                <li>Любимая</li>
+                <li>Ракитянская</li>
+                <li>Бутербродная</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+
+            <div class="category-list-item">
+              <div class="category-list-item__name">Ветчина:</div>
+              <ul class="category-list-item__products">
+                <li>Ракитянские традиции</li>
+                <li>Медовая</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+
+            <div class="category-list-item">
+              <div class="category-list-item__name">Сосиски:</div>
+              <ul class="category-list-item__products">
+                <li>Ракитянские</li>
+                <li>Ракитянские пикантные с сыром</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+
+            <div class="category-list-item">
+              <div class="category-list-item__name">Сардельки:</div>
+              <ul class="category-list-item__products">
+                <li>Шашлычне</li>
+                <li>Ракитянские из свинины</li>
+                <li>Шпикачки "По-Ракитянски"</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+
+            <div class="category-list-item">
+              <div class="category-list-item__name">Колбасы варено-копченые:</div>
+              <ul class="category-list-item__products">
+                <li>Романовская новая</li>
+                <li>Сервелат "Мускатный"</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+
+            <div class="category-list-item">
+              <div class="category-list-item__name">Полукопченые колбасы:</div>
+              <ul class="category-list-item__products">
+                <li>Российская</li>
+                <li>Белгородская</li>
+                <li>По-Ракитянски</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+
+            <div class="category-list-item">
+              <div class="category-list-item__name">Продукты из мяса свинины и птицы копчено-вареные</div>
+              <ul class="category-list-item__products">
+                <li>Грудинка "Домашняя по-Ракитянски"</li>
+                <li>Карбонат "Ракитянский"</li>
+                <li>Вырезка свинная "Юсуповская аппетитная"</li>
+                <li>Окорок "Деликатесный особый"</li>
+                <li>Грудка ЦБ на кости</li>
+              </ul>
+              <a href="" class="category-list-item__more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="category" class="category scrollto">
+        <div class="cd-modal">
+          <div class="modal-content">
+            <h1>Красотища какая</h1>
+      
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+               Ad modi repellendus, optio eveniet eligendi molestiae? 
+               Fugiat, temporibus! 
+            </p>
+            <button data-product-7 class="prices scroll">перейти на прайс</button>
+         </div>
+          <a href="#0" class="modal-close">Close</a>
+        </div>
+        <div class="cd-transition-layer"> 
+          <div class="bg-layer"></div>
+        </div>
+
+        <div class="container">
+          <div class="category-list">
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Вареные колбасы</div>
+            </div>
+
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Ветчина</div>
+            </div>
+
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Сосиски</div>
+            </div>
+
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Сардельки</div>
+            </div>
+
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Капченые колбасы</div>
+            </div>
+
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Полукопченые колбасы</div>
+            </div>
+
+            <div class="category-list__item">
+              <a class="category-list__img-container cd-modal-trigger">
+                <img
+                  src="/img/category-item.jpg"
+                  alt="Ветчина"
+                  class="category-list__img"
+                />
+              </a>
+              <div class="category-list__name">Продукты из свинины и птицы</div>
+            </div>
+          </div>
+
+          //<div class="cd-modal"> 
+            //<a href="#0" class="modal-close">Close</a>
+          //</div>
+        </div>
+      </section> -->
+
+      <section class="reviews">
+        <div class="container">
+          <div class="list-reviews">
+            <div class="list-reviews__item review">
+              <div class="review__info">
+                <div class="review__img-container">
+                  <div class="review__initials">F. A.</div>
+                </div>
+
+                <div class="review__text-container">
+                  <span class="review__name">Farus Aran</span>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reiciendis voluptatibus cum accusantium accusamus vero, voluptas voluptates magnam ipsa deleniti iusto placeat obcaecati tenetur impedit nam aspernatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-reviews__item review">
+              <div class="review__info">
+                <div class="review__img-container">
+                  <div class="review__initials">F. A.</div>
+                </div>
+
+                <div class="review__text-container">
+                  <span class="review__name">Farus Aran</span>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reiciendis voluptatibus cum accusantium accusamus vero, voluptas voluptates magnam ipsa deleniti iusto placeat obcaecati tenetur impedit nam aspernatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-reviews__item review">
+              <div class="review__info">
+                <div class="review__img-container">
+                  <div class="review__initials">F. A.</div>
+                </div>
+
+                <div class="review__text-container">
+                  <span class="review__name">Farus Aran</span>
+                  <p class="review__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reiciendis voluptatibus cum accusantium accusamus vero, voluptas voluptates magnam ipsa deleniti iusto placeat obcaecati tenetur impedit nam aspernatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="down-menu">
+        <div class="container">
+          <div class="down-menu__wrapper">
+
+            <div class="down-menu__inner">
+              <a href="#category" class="down-menu__link">Продукция</a>
+            <a href="#about" class="down-menu__link">О нас</a>
+            </div>
+
+            <div class="down-menu__logo-container">
+              <img
+                src="/img/logo.png"
+                alt="логотип компании"
+                class="down-menu__logo"
+              />
+            </div>
+
+            <div class="down-menu__inner">
+              <a href="#contacts" class="down-menu__link">Обратная связь</a>
+              <a id="prices" class="down-menu__link prices">Прайс</a>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <div id="modal-price" class="modal-price">
+        <div class="modal-price__container">
+          <span class="close">&times;</span>
+          <div class="modal-price__curls"></div>
+
+          <div class="modal-price__title" data-product-1>Варёные колбасы:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «Докторская  особая»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «Любимая»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «Ракитянская»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «Бутербродная»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div class="modal-price__title" data-product-2>Ветчина:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Ветчина «Ракитянские  традиции»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Ветчина «Медовая»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div class="modal-price__title" data-product-3>Сосиски:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Сосиски «Ракитянские»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Сосиски «Ракитянские пикантные с сыром»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div class="modal-price__title" data-product-4>Сардельки:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Сардельки «Шашлычные»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Сардельки «Ракитянские из свинины»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Шпикачки  «По -Ракитянски»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div class="modal-price__title" data-product-5>Колбасы  варёно-копченые:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса варено-копченая  «Романовская новая»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса варено-копченая Сервелат «Мускатный»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div class="modal-price__title" data-product-6>Полукопчёные  колбасы:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса  «Российская»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «Белгородская»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «По-Ракитянски»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div id="product-7" class="modal-price__title" data-product-7>Продукты  из  мяса  свинины и птицы копчено-вареные:</div>
+          <div class="modal-price__list">
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса  «Российская»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «Белгородская»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+            <div class="modal-price__item">
+              <p class="modal-price__text">Колбаса «По-Ракитянски»</p>
+              <p class="modal-price__price">1000р.</p>
+            </div>
+          </div>
+
+          <div class="modal-price__curls"></div>
+        </div>
+      </div>
+    </main>
+    
+
+    
+    
+
+    <footer id="contacts" class="contacts scrollto">
+      <div class="container contacts__container">
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__wrapper">
+          <div class="contacts__map-cotainer">
+            <div style="position: relative; overflow: hidden">
+              <a
+                href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+              ></a
+              ><a
+                href="https://yandex.ru/maps/10645/belgorod-oblast/house/narodnaya_ulitsa_139/Z0wYfgJiTEUOQFtqfXRzdX9jZQ==/?ll=35.852509%2C50.824301&utm_medium=mapframe&utm_source=maps&z=16.83"
+                style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+              ></a
+              ><iframe
+                src="https://yandex.ru/map-widget/v1/-/CCUVZPFGHB"
+                frameborder="1"
+                allowfullscreen="true"
+                style="position: relative"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="contacts__info">
+            <div class="contacts__inner">
+              <p class="contacts__subtitle">Наш адрес</p>
+              <p class="contacts__text">
+                Белгородская область, п.Ракитяное, ул.Народная 139
+              </p>
+            </div>
+            
+            <div class="contacts__inner">
+              <p class="contacts__subtitle">Время работы</p>
+              <p class="contacts__text">08:00 - 20:00</p>
+  
+              <p class="contacts__phone">+7 (952) 435-25-05</p>
+            </div>
+
+            <div class="contacts__social-links">
+              <div class="contacts__vk"></div>
+            </div>
+          </div>
+
+          <div class="contacts__question">
+            <p class="contacts__subtitle">У вас остались вопросы?</p>
+            <p class="contacts__text">
+              Напишите нам и наш менеджер с радостью на них ответит
+            </p>
+
+            <form id="form" class="form" action="#">
+              <div class="form__wrapper">
+                  <div class="form__block">
+                      <input
+                        class="form__input _req"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Ваше имя"
+                      />
+                    </div>
+    
+                    <div class="form__block">
+                      <input 
+                        class="form__input _req _tel"
+                        type="text"
+                        name="tel"
+                        id="tel"
+                        placeholder="Телефон"
+                      />
+                    </div>
+              </div>
+              
+              <div class="form__block">
+                <textarea
+                  class="form__msg _req _erorr"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="2"
+                  placeholder="Текст сообщения"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form__btn">Отправить</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p class="copyright__info">
+          © Copyright, 2022
+        </p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="/script/gallery.js"></script>
+    <script src="/script/modal.js"></script>
+    <script src="/script/form.js"></script>
+    <script src="/script/scroll.js"></script>
+    <script src="/script/burger.js"></script>
+
+    <script src="/script/jquery-2.1.4.js"></script>
+    <script src="/script/main.js"></script> <!-- Resource jQuery -->
+  </body>
+</html>

@@ -1,7 +1,14 @@
 nav {
-  background: rgba(68, 68, 68, 0.7);
+  padding: 0 5%;
+  background: #EAE4DA;
   -webkit-box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 0 2%;
+  }
 }
 
 .nav-container {
@@ -53,7 +60,7 @@ nav {
 
 .logo {
   width: auto;
-  height: 85%;
+  height: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,8 +95,8 @@ nav {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 120%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#42A532), color-stop(50%, #42A532), color-stop(50%, #fff));
-  background-image: linear-gradient(to right, #42A532, #42A532 50%, #fff 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#42A532), color-stop(50%, #42A532), color-stop(50%, #414141));
+  background-image: linear-gradient(to right, #42A532, #42A532 50%, #414141 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -155,7 +162,7 @@ nav {
   font-weight: 400;
   font-size: 2rem;
   line-height: 120%;
-  color: #FFFFFF;
+  color: #313131;
 }
 
 @media screen and (max-width: 1000px) {
@@ -229,8 +236,7 @@ nav {
   padding: 3rem 0;
   font-size: 1.5rem;
   z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#434343), to(#111111));
-  background: linear-gradient(180deg, #434343 0%, #111111 100%);
+  background: url("../img/footer.jpg");
   -webkit-box-shadow: 0 3px 8px rgba(43, 43, 43, 0.8);
           box-shadow: 0 3px 8px rgba(43, 43, 43, 0.8);
   color: red;

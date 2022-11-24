@@ -1,0 +1,395 @@
+{
+    "categories": [
+        {
+            "id": "sausages",
+            "name": "Сосиски",
+            "img": "../delicacies/img/sausages.png",
+            "products":[
+                {
+                    "name":"Сосиски \"Ракитянские пикантные с сыром\"",
+                    "characteristics":[
+                        {
+                            "pack":"п/о",
+                            "price":"326",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ]  
+                },
+                {
+                    "name":"Сосиски \"Ракитянские\"",
+                    "characteristics":[
+                        {
+                            "pack":"н/о",
+                            "price":"325",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"335",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ]  
+                },
+                {
+                    "name":"Сосиски \"Аппетитные\"",
+                    "characteristics":[
+                        {
+                            "pack":"п/о",
+                            "price":"180",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ]  
+                }
+            ]
+        },
+        {
+            "id": "cooked",
+            "name": "Колбасы вареные",
+            "img": "../delicacies//img/cooked.png",
+            "products":[
+                {
+                    "name":"Колбаса \"Докторская особая\"",
+                    "characteristics":[
+                        {
+                            "pack":"п/о",
+                            "price":"320",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Колбаса \"Бутербродная\"",
+                    "characteristics":[
+                        {
+                            "pack":"п/о",
+                            "price":"250",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"н/о",
+                            "price":"290",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"300",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Колбаса \"Ракитянская\"",
+                    "characteristics":[
+                        {
+                            "pack":"п/о",
+                            "price":"290",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Колбаса \"Любимая\"",
+                    "characteristics":[
+                        {
+                            "pack":"п/о",
+                            "price":"330",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                }
+            ]
+        },
+        {
+            "id": "big-sausages",
+            "name": "Сардельки",
+            "img": "../delicacies//img/big-sausages.png",
+            "products":[
+                {
+                    "name":"Сардельки \"Ракитянские из свинины\"",
+                    "characteristics":[
+                        {
+                            "pack":"н/о",
+                            "price":"330",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"340",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ]  
+                },
+                {
+                    "name":"Шпикачки \"По-ракитянски\"",
+                    "characteristics":[
+                        {
+                            "pack":"н/о",
+                            "price":"335",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"345",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ]  
+                },
+                {
+                    "name":"Сардельки \"Шашлычные\"",
+                    "characteristics":[
+                        {
+                            "pack":"н/о",
+                            "price":"315",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"325",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ]  
+                }
+            ]
+        },
+        {
+            "id": "cooked-smoked",
+            "name": "Колбасы варено-копченые",
+            "img": "../delicacies//img/half-smoked.png",
+            "products":[
+                {
+                    "name":"Колбаса в/к \"Романовская новая\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"480",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"490",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Колбаса в/к \"Юсуповская\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"660",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"670",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Сервелат в/к \"Мускатный\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"490",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"500",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                }
+            ]
+        },
+        {
+            "id": "half-smoked",
+            "name": "Полукопченые колбасы",
+            "img": "../delicacies//img/half-smoked.png",
+            "products":[
+                {
+                    "name":"Колбаса п/к \"Ставропольская\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"390",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"400",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                    
+                },
+                {
+                    "name":"Колбаса п/к \"По-ракитянски\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"500",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"510",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                    
+                },
+                {
+                    "name":"Колбаса п/к \"Белгородская\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"510",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"520",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                    
+                },
+                {
+                    "name":"Колбаса п/к \"Российская\"",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"410",
+                            "shelfLife":"15 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"420",
+                            "shelfLife":"30 суток при t 0-6°C"
+                        }
+                    ] 
+                    
+                }
+            ]
+        },
+        {
+            "id": "pork-poultry",
+            "name": "Продукты из мяса свинины и птицы копчено-вареные",
+            "img": "../delicacies//img/pork-poultry.png",
+            "products":[
+                {
+                    "name":"Грудинка свиная \"Домашняя по-ракитянски\" в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"390",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"400",
+                            "shelfLife":"20 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Вырезка свиная \"Юсуповская аппетитная\" в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"510",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"520",
+                            "shelfLife":"20 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Карбонад свиной \"Ракитянский\" в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"450",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"460",
+                            "shelfLife":"20 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Окорок свиной \"Деликатесный\" в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"420",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"430",
+                            "shelfLife":"20 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Грудка ц/б в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"390",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"400",
+                            "shelfLife":"20 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Филе ц/б в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"400",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        },
+                        {
+                            "pack":"в/у",
+                            "price":"410",
+                            "shelfLife":"20 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Ребрышки в/к",
+                    "characteristics":[
+                        {
+                            "pack":"",
+                            "price":"390",
+                            "shelfLife":"7 суток при t 0-6°C"
+                        }
+                    ] 
+                },
+                {
+                    "name":"Набор для солянки",
+                    "characteristics":[
+                        {
+                            "pack":"в/у",
+                            "price":"250",
+                            "shelfLife":"3мес при не выше -10°С"
+                        }
+                    ] 
+                }
+            ]
+        }
+    ]
+}

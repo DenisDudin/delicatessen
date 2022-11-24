@@ -1,100 +1,276 @@
 .category {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .category-list {
-    display: flex;
+    padding: 0 20px;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "sos sos"
+                        "kol sar"
+                        "kop pol"
+                        "pr pr";
+    grid-gap: 50px;
 
-    @media screen and (max-width: 1000px) {
-        margin: 70px auto;
+    @media screen and (max-width: 700px) {
+        grid-gap: 40px;
     }
 
-    @media screen and (max-width: 768px) {
-        margin: 70px auto 50px;
-    }
-
-    @media screen and (max-width: 413px) {
-        margin: 40px auto 30px;
-    }
-
-    &__item {
-        margin: 0 20px 50px;
-        width: 21%;
-
-        @media screen and (max-width: 1000px) {
-            margin: 0 15px 30px;
-            width: 19%;
-        }
-
-        @media screen and (max-width: 768px) {
-            margin: 0 10px 30px;
-            width: 25%;
-        }
-
-        @media screen and (max-width: 550px) {
-            margin: 0 15px 20px;
-            width: 35%;
-        }
-
-        @media screen and (max-width: 413px) {
-            margin: 0 10px 15px;
-        }
-    }
-
-    &__img-container {
-        position: relative;
+    @media screen and (max-width: 600px) {
         display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+    }
+    
+    &__item {
+        position: relative;
+        padding: 20px 30px;
         justify-content: center;
-        margin-bottom: 15px;
-        border-radius: 50%;
-        overflow: hidden;
-        background:
-        linear-gradient(white, white) padding-box,
-        linear-gradient(94.25deg, #1eca1b 10.49%, rgb(25, 143, 33) 94.61%) border-box;
-        border: 5px solid transparent;
-        cursor: pointer;
+        background: url('../img/grass-back.png') no-repeat;
+        background-size: 40%;
+        background-position: right bottom;
+        background-color: #E5C9A7;
+        border-radius: 20px;
+        box-shadow: 0px 4px 26px #BEB29E;
 
-        @media screen and (max-width: 1200px) {
-            height: 20vw;
+        &:nth-child(1) {
+            grid-area: sos;
+            background-size: 25%;
+
+            @media screen and (max-width: 600px) {
+                background-size: 40%;
+            }
+        }
+        &:nth-child(2) {
+            grid-area: kol;
+        }
+        &:nth-child(3) {
+            grid-area: sar;
+        }
+        &:nth-child(4) {
+            grid-area: kop;
+        }
+        &:nth-child(5) {
+            grid-area: pol;
+        }
+        &:nth-child(6) {
+            grid-area: pr;
+            background-size: 25%;
+
+            @media screen and (max-width: 600px) {
+                font-size: 2.5rem;
+                background-size: 40%;
+            }
         }
 
         @media screen and (max-width: 1000px) {
-            height: 18vw;
-        }
-
-        @media screen and (max-width: 768px) {
-            height: 24vw;
-        }
-
-        @media screen and (max-width: 550px) {
-            margin-bottom: 10px;
-            height: 34vw;
+            background-size: 40%
         }
     }
 
     &__name {
+        max-width: 800px;
+        margin: 0 auto;
         text-align: center;
-        font-family: 'Montserrat';
+        font-family: 'Gabriela';
         font-style: normal;
-        font-weight: 600;
-        font-size: 2.4rem;
+        font-weight: 400;
+        font-size: 40px;
         line-height: 120%;
-        color: #926C49;
+        color: #3D221E;
 
         @media screen and (max-width: 1000px) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 700px) {
+            font-size: 2.1rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__products {
+        padding: 0 0 30px 0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 199.4%;
+        color: #383735;
+        list-style: none;
+        z-index: 10;
+
+        @media screen and (max-width: 1200px) {
             font-size: 1.8rem;
         }
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 1000px) {
             font-size: 1.7rem;
+            line-height: 170%;
         }
 
-        @media screen and (max-width: 413px) {
+        @media screen and (max-width: 450px) {
+            max-width: 260px;
+            list-style: circle;
             font-size: 1.5rem;
-            line-height: 110%;
         }
     }
+
+    &__more {
+        position: absolute;
+        bottom: 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 199.4%;
+        text-decoration-line: underline;
+        color: #000000;
+        transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        cursor: pointer;
+
+        &:hover {
+            color: #24924B;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 1.8rem;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 1.6rem;
+        }
+        
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 35%;
+    }
+}
+
+
+.more-about {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding: 100px 0; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+    overflow: scroll; 
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        margin: 0 auto 150px;
+        position: relative;
+        max-width: 1000px;
+        width: 80%;
+        padding: 25px 50px;
+        align-items: center;
+        justify-content: center;
+        background: url('../img/grass-back.png') no-repeat;
+        background-size: 40%;
+        background-position: right bottom;
+        background-color: #E5C9A7;
+        box-shadow: 0px 4px 26px #BEB29E;
+        border-radius: 20px;
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-family: 'Gabriela';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.4rem;
+        line-height: 110%;
+        color: #3D221E;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__products {
+        width: 55%;
+    }
+
+    &__product-name {
+        margin-bottom: 15px;
+        display: block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 110%;
+        color: #3D221E;
+        cursor: pointer;
+
+        &:hover {
+            text-shadow: 1px 1px 3px rgba(186, 142, 113, 0.8);
+            font-weight: 500;
+        }
+
+        &--active {
+            font-weight: 600;
+            text-shadow: 1px 0px 5px rgba(255, 255, 255, 0.8);
+        }
+    }
+    
+    &__characteristics {
+        width: 42%;
+    }
+
+    &__characteristic {
+        margin: 0;
+        display: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 188.9%;
+        color: #3D221E;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__price {
+        margin-top: 20px;
+        padding: 5px 30px;
+        display: inline-block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 199.4%;
+        color: #3D221E;
+        background: #EDDAC2;
+        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    
 }

@@ -2,7 +2,7 @@
   display: none;
   position: fixed;
   z-index: 100;
-  padding: 50px;
+  padding: 50px 0;
   left: 0;
   top: 0;
   width: 100%;
@@ -19,13 +19,7 @@
 
 @media screen and (max-width: 768px) {
   .modal-price {
-    padding: 80px 15px 20px;
-  }
-}
-
-@media screen and (max-width: 413px) {
-  .modal-price {
-    padding: 80px 10px 20px;
+    padding: 80px 0px 20px;
   }
 }
 
@@ -60,12 +54,6 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .modal-price__container {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 550px) {
   .modal-price__container {
     padding: 10px 40px;
@@ -87,8 +75,8 @@
   width: 630px;
   background-color: #59AC01;
   background-repeat: no-repeat;
-  -webkit-mask-image: url("/img/curls.svg");
-          mask-image: url("/img/curls.svg");
+  -webkit-mask-image: url("../img/curls.svg");
+          mask-image: url("../img/curls.svg");
   -webkit-mask-size: contain;
           mask-size: contain;
   -webkit-mask-repeat: no-repeat;
