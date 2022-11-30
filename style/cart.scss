@@ -1,0 +1,25 @@
+.category-name {
+    cursor: pointer;
+}
+
+.category-list {
+    display: none;
+
+    &__active {
+        display: block;
+    }
+
+    &__item {
+        display: flex;
+    }
+}
+
+.cart-list {
+    width: 50%;
+    min-height: 400px;
+    background: green;
+
+    &__product {
+        display: flex;
+    }
+}

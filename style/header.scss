@@ -10,8 +10,18 @@
     align-items: center;
 
     @media screen and (max-width: 500px) {
+        padding: 0;
         background: url('/img/phone.jpg') no-repeat;
         background-size: cover;
+    }
+}
+
+.phone-img {
+    display: none;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        display: flex;
     }
 }
 

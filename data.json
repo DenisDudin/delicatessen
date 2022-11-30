@@ -10,6 +10,7 @@
                     "characteristics":[
                         {
                             "pack":"п/о",
+                            "weight": 400,
                             "price":"326",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -20,11 +21,13 @@
                     "characteristics":[
                         {
                             "pack":"н/о",
+                            "weight": 400,
                             "price":"325",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"335",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -35,6 +38,7 @@
                     "characteristics":[
                         {
                             "pack":"п/о",
+                            "weight": 400,
                             "price":"180",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -52,6 +56,7 @@
                     "characteristics":[
                         {
                             "pack":"п/о",
+                            "weight": 500,
                             "price":"320",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -62,17 +67,20 @@
                     "characteristics":[
                         {
                             "pack":"п/о",
+                            "weight": 500,
                             "price":"250",
                             "shelfLife":"30 суток при t 0-6°C"
                         },
                         {
                             "pack":"н/о",
+                            "weight": 500,
                             "price":"290",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
                             "price":"300",
+                            "weight": 500,
                             "shelfLife":"30 суток при t 0-6°C"
                         }
                     ] 
@@ -82,6 +90,7 @@
                     "characteristics":[
                         {
                             "pack":"п/о",
+                            "weight": 500,
                             "price":"290",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -92,6 +101,7 @@
                     "characteristics":[
                         {
                             "pack":"п/о",
+                            "weight": 500,
                             "price":"330",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -109,11 +119,13 @@
                     "characteristics":[
                         {
                             "pack":"н/о",
+                            "weight": 400,
                             "price":"330",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"340",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -124,11 +136,13 @@
                     "characteristics":[
                         {
                             "pack":"н/о",
+                            "weight": 400,
                             "price":"335",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"345",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -139,11 +153,13 @@
                     "characteristics":[
                         {
                             "pack":"н/о",
+                            "weight": 500,
                             "price":"315",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 500,
                             "price":"325",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -161,11 +177,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 500,
                             "price":"480",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 500,
                             "price":"490",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -176,11 +194,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 350,
                             "price":"660",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 350,
                             "price":"670",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -191,11 +211,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"490",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"500",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -213,11 +235,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"390",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"400",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -229,11 +253,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"500",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"510",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -245,11 +271,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 500,
                             "price":"510",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 500,
                             "price":"520",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -261,11 +289,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 500,
                             "price":"410",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 500,
                             "price":"420",
                             "shelfLife":"30 суток при t 0-6°C"
                         }
@@ -284,11 +314,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"390",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"400",
                             "shelfLife":"20 суток при t 0-6°C"
                         }
@@ -299,11 +331,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"510",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"520",
                             "shelfLife":"20 суток при t 0-6°C"
                         }
@@ -314,11 +348,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"450",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"460",
                             "shelfLife":"20 суток при t 0-6°C"
                         }
@@ -329,11 +365,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"420",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"430",
                             "shelfLife":"20 суток при t 0-6°C"
                         }
@@ -344,11 +382,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 700,
                             "price":"390",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 700,
                             "price":"400",
                             "shelfLife":"20 суток при t 0-6°C"
                         }
@@ -359,11 +399,13 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 400,
                             "price":"400",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
                             "pack":"в/у",
+                            "weight": 400,
                             "price":"410",
                             "shelfLife":"20 суток при t 0-6°C"
                         }
@@ -374,6 +416,7 @@
                     "characteristics":[
                         {
                             "pack":"",
+                            "weight": 700,
                             "price":"390",
                             "shelfLife":"7 суток при t 0-6°C"
                         }
@@ -384,6 +427,7 @@
                     "characteristics":[
                         {
                             "pack":"в/у",
+                            "weight": 700,
                             "price":"250",
                             "shelfLife":"3мес при не выше -10°С"
                         }
