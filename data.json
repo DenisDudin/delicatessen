@@ -9,7 +9,7 @@
                     "name":"Сосиски \"Ракитянские пикантные с сыром\"",
                     "characteristics":[
                         {
-                            "pack":"п/о",
+                            "pack":"полиамид",
                             "weight": 400,
                             "price":"326",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -20,13 +20,13 @@
                     "name":"Сосиски \"Ракитянские\"",
                     "characteristics":[
                         {
-                            "pack":"н/о",
+                            "pack":"натуральная",
                             "weight": 400,
                             "price":"325",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"335",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -37,7 +37,7 @@
                     "name":"Сосиски \"Аппетитные\"",
                     "characteristics":[
                         {
-                            "pack":"п/о",
+                            "pack":"полиамид",
                             "weight": 400,
                             "price":"180",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -55,7 +55,7 @@
                     "name":"Колбаса \"Докторская особая\"",
                     "characteristics":[
                         {
-                            "pack":"п/о",
+                            "pack":"полиамид",
                             "weight": 500,
                             "price":"320",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -66,19 +66,19 @@
                     "name":"Колбаса \"Бутербродная\"",
                     "characteristics":[
                         {
-                            "pack":"п/о",
+                            "pack":"полиамид",
                             "weight": 500,
                             "price":"250",
                             "shelfLife":"30 суток при t 0-6°C"
                         },
                         {
-                            "pack":"н/о",
+                            "pack":"натуральная",
                             "weight": 500,
                             "price":"290",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "price":"300",
                             "weight": 500,
                             "shelfLife":"30 суток при t 0-6°C"
@@ -89,7 +89,7 @@
                     "name":"Колбаса \"Ракитянская\"",
                     "characteristics":[
                         {
-                            "pack":"п/о",
+                            "pack":"полиамид",
                             "weight": 500,
                             "price":"290",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -100,7 +100,7 @@
                     "name":"Колбаса \"Любимая\"",
                     "characteristics":[
                         {
-                            "pack":"п/о",
+                            "pack":"полиамид",
                             "weight": 500,
                             "price":"330",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -118,13 +118,13 @@
                     "name":"Сардельки \"Ракитянские из свинины\"",
                     "characteristics":[
                         {
-                            "pack":"н/о",
+                            "pack":"натуральная",
                             "weight": 400,
                             "price":"330",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"340",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -135,13 +135,13 @@
                     "name":"Шпикачки \"По-ракитянски\"",
                     "characteristics":[
                         {
-                            "pack":"н/о",
+                            "pack":"натуральная",
                             "weight": 400,
                             "price":"335",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"345",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -152,13 +152,13 @@
                     "name":"Сардельки \"Шашлычные\"",
                     "characteristics":[
                         {
-                            "pack":"н/о",
+                            "pack":"натуральная",
                             "weight": 500,
                             "price":"315",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 500,
                             "price":"325",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -170,19 +170,19 @@
         {
             "id": "cooked-smoked",
             "name": "Колбасы варено-копченые",
-            "img": "../delicacies//img/half-smoked.png",
+            "img": "../delicacies//img/cooked-smoked.png",
             "products":[
                 {
                     "name":"Колбаса в/к \"Романовская новая\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 500,
                             "price":"480",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 500,
                             "price":"490",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -193,13 +193,13 @@
                     "name":"Колбаса в/к \"Юсуповская\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 350,
                             "price":"660",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 350,
                             "price":"670",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -210,13 +210,13 @@
                     "name":"Сервелат в/к \"Мускатный\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"490",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"500",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -234,13 +234,13 @@
                     "name":"Колбаса п/к \"Ставропольская\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"390",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"400",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -252,13 +252,13 @@
                     "name":"Колбаса п/к \"По-ракитянски\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"500",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"510",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -270,13 +270,13 @@
                     "name":"Колбаса п/к \"Белгородская\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 500,
                             "price":"510",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 500,
                             "price":"520",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -288,13 +288,13 @@
                     "name":"Колбаса п/к \"Российская\"",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 500,
                             "price":"410",
                             "shelfLife":"15 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 500,
                             "price":"420",
                             "shelfLife":"30 суток при t 0-6°C"
@@ -313,13 +313,13 @@
                     "name":"Грудинка свиная \"Домашняя по-ракитянски\" в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"390",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"400",
                             "shelfLife":"20 суток при t 0-6°C"
@@ -330,13 +330,13 @@
                     "name":"Вырезка свиная \"Юсуповская аппетитная\" в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"510",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"520",
                             "shelfLife":"20 суток при t 0-6°C"
@@ -347,13 +347,13 @@
                     "name":"Карбонад свиной \"Ракитянский\" в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"450",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"460",
                             "shelfLife":"20 суток при t 0-6°C"
@@ -364,13 +364,13 @@
                     "name":"Окорок свиной \"Деликатесный\" в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"420",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"430",
                             "shelfLife":"20 суток при t 0-6°C"
@@ -381,13 +381,13 @@
                     "name":"Грудка ц/б в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 700,
                             "price":"390",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 700,
                             "price":"400",
                             "shelfLife":"20 суток при t 0-6°C"
@@ -398,13 +398,13 @@
                     "name":"Филе ц/б в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 400,
                             "price":"400",
                             "shelfLife":"7 суток при t 0-6°C"
                         },
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 400,
                             "price":"410",
                             "shelfLife":"20 суток при t 0-6°C"
@@ -415,7 +415,7 @@
                     "name":"Ребрышки в/к",
                     "characteristics":[
                         {
-                            "pack":"",
+                            "pack":"весовой товар",
                             "weight": 700,
                             "price":"390",
                             "shelfLife":"7 суток при t 0-6°C"
@@ -426,7 +426,7 @@
                     "name":"Набор для солянки",
                     "characteristics":[
                         {
-                            "pack":"в/у",
+                            "pack":"вакуумная",
                             "weight": 700,
                             "price":"250",
                             "shelfLife":"3мес при не выше -10°С"

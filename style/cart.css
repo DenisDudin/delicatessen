@@ -2,15 +2,15 @@
   cursor: pointer;
 }
 
-.category-list {
+.cart-category-list {
   display: none;
 }
 
-.category-list__active {
+.cart-category-list__active {
   display: block;
 }
 
-.category-list__item {
+.cart-category-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

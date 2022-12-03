@@ -41,6 +41,7 @@
         <div class="nav-links">
           <a href="#" class="nav-links__item prices">Прайс</a>
           <a href="#category" class="nav-links__item">Продукция</a>
+          <a href="#about" class="nav-links__item">О нас</a>
           <a href="#contacts" class="nav-links__item">Контакты</a>
           <div class="nav-links__phone">+7 (952) 435-25-05</div>
         </div>
@@ -56,6 +57,7 @@
           <ul>
             <a href="#" class="nav-links__item prices">Прайс</a>
             <a href="#category" class="nav-links__item">Продукция</a>
+			<a href="#about" class="nav-links__item">О нас</a>
             <a href="#contacts" class="nav-links__item">Контакты</a>
           </ul>
         </div>
@@ -64,7 +66,7 @@
 
     <header>
       <div class="header-container">
-        <img src="./img/header-tomatos.png" alt="" class="phone-img">
+        <img src="./delicacies/img/header-tomatos.png" alt="" class="phone-img">
 
         <h1 class="title">Ракитянские деликатесы</h1>
         <div class="line-img-container">
@@ -83,17 +85,17 @@
           <img src="../delicacies/img/curls.svg" alt="#" class="line-img" />
         </div>
 
-        <img src="./img/header-sausages.png" alt="" class="phone-img">
+        <img src="./delicacies/img/header-sausages.png" alt="" class="phone-img">
       </div>
     </header>
 
     <main>
 
-      <section id="about" >
+      <section >
           <div class="about-list container">
             <div class="about-list__item">
-              <div class="about-list__img-container">
-                <img src="./img/meat.svg" alt="мясо" class="about-list__img">
+              <div class="about-list__img-container about-list__img-container--1">
+                <img src="../delicacies/img/meat-circle.png" alt="мясо" class="about-list__img">
               </div>
               <div class="about-list__text">
                 Мы стремимся производить высококачественные продукты из натурального мяса, по современным технологиям.
@@ -101,31 +103,17 @@
             </div>
 
             <div class="about-list__item">
-              <div class="about-list__img-container">
-                <img src="./img/sausages.svg" alt="колбаса" class="about-list__img">
+              <div class="about-list__img-container about-list__img-container--2">
+                <img src="../delicacies/img/meat-circle.png" alt="колбаса" class="about-list__img">
               </div>
               <div class="about-list__text">
                 Ассортимент «Ракитянских деликатесов» способен удовлетворить самые изысканные вкусовые предпочтения. 
               </div>
             </div>
 
-            <div class="about-list__item">
-              <div class="about-list__img-container">
-                <img src="./img/people.svg" alt="люди" class="about-list__img">
-              </div>
-              <div class="about-list__text">
-                Наши сотрудники имеют большой опыт в производстве, с 1982 года, когда на территорри район работал один из крупнейших в советском союзе “Готнянский мясокомбинат”. 
-              </div>
-            </div>
           </div>
 
-          <div class="about-phrase">
-            <div class="container">
-              <p class="about-phrase__text">
-                Наш принцип <span>"Качество основанное на традициях"</span> не пустые слова, и является фундаментом нашего производства.
-              </p>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -144,7 +132,7 @@
         </div>
       </section>
 
-      <section class="production">
+      <section id="about" class="production">
         <div class="production-container">
           <div class="production-list">
 
@@ -154,7 +142,7 @@
                 Ракитянский район является одним из лидеров по производству мяса птицы, свинины, говядины как в агрохолдингах так и в личных подсобных хозяйствах. Большую часть сырья для наших деликатесов мы закупаем у небольших фермерских хозяйств.
               </p>
               <div class="production-list__img-container">
-                <img src="./img/production-1.png" alt="" class="production-list__img">
+                <img src="../delicacies/img/production-1.jpg" alt="" class="production-list__img">
               </div>
             </div>
 
@@ -164,7 +152,7 @@
                 За счет такой логистической близости к производителю наша продукция в основном производится из охлажденного мяса, что позволяет в конечном итоге передать уникальные вкусовые качества нашим продуктам.
               </p>
               <div class="production-list__img-container">
-                <img src="./img/production-2.png" alt="" class="production-list__img">
+                <img src="../delicacies/img/production-2.jpg" alt="" class="production-list__img">
               </div>
             </div>
 
@@ -175,13 +163,22 @@
                 Наши сотрудники имеют большой опыт в производстве, с 1982 года, когда на территорри района работал один из крупнейших в советском союзе “Готнянский мясокомбинат”. 
               </p>
               <div class="production-list__img-container">
-                <img src="./img/production-3.png" alt="" class="production-list__img">
+                <img src="../delicacies/img/production-3.jpg" alt="" class="production-list__img">
               </div>
             </div>
 
           </div>
+
         </div>
       </section>
+
+      <div class="about-phrase">
+        <div class="container">
+          <p class="about-phrase__text">
+            Наш принцип, <span>"Качество основанное на традициях"</span> не пустые слова, и является фундаментом нашего производства.
+          </p>
+        </div>
+      </div>
 
       <section class="down-menu">
         <div class="container">
@@ -344,7 +341,7 @@
     <script src="../delicacies/script/jquery-2.1.4.js"></script>
     <script src="../delicacies/script/main.js"></script>
 
-    <script src="../delicacies/script/gallery.js"></script>
+    <!-- <script src="../delicacies/script/gallery.js"></script> -->
     <script src="../delicacies/script/modal.js" type="module"></script>
     <script src="../delicacies/script/form.js"></script>
     <script src="../delicacies/script/scroll.js"></script>
