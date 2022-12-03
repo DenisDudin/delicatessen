@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 500px) {
   .contacts__info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
