@@ -32,11 +32,12 @@ $(document).ready ( function(){
                     const name = createProduct('p', 'category-item__name', item.name, wrapper);
                     const pack = createProduct('p', 'category-item__pack', `Тип упаковки: ${productItem.pack}`, wrapper);
 
-                    const minus = createProduct('button', "category-item__btn-quantity", "-", product);
-                    const inner = createProduct('div', 'category-item__inner', '', product);
+                    const quantityWrapper = createProduct('div', 'category-item__quantity-wrapper', '', product)
+                    const minus = createProduct('button', "category-item__btn-quantity", "-", quantityWrapper);
+                    const inner = createProduct('div', 'category-item__inner', '', quantityWrapper);
                     const quantity = createProduct('p', "category-item__quantity", '1', inner);
                     const weight = createProduct('span', "category-item__weight", productItem.weight, inner);
-                    const plus = createProduct('button',"category-item__btn-quantity", '+', product);
+                    const plus = createProduct('button',"category-item__btn-quantity", '+', quantityWrapper);
     
                     const price = createProduct('p', 'category-item__price', `${productItem.price} руб.`, product);
 
@@ -53,21 +54,20 @@ $(document).ready ( function(){
         const categoryList = document.querySelectorAll('.category-name');
         categoryList.forEach(item => {
             item.addEventListener(`click`, (e) => {
-                e.target.nextSibling.classList.toggle('category-list__active');
+                e.target.classList.toggle('category-name--active')
+                e.target.nextSibling.classList.toggle('cart-category-list--active');
             });
         });
 
    
 
-        const productList = document.querySelectorAll('.category-list__item');
+        const productList = document.querySelectorAll('.cart-category-list__item');
         productList.forEach(item => {
             item.addEventListener('click', (e) => {
-
-                
                 if (e.target.className == 'category-item__btn') {
                     addProductToCart(item);
                 } else if (e.target.className == 'category-item__btn-quantity') {
-                    changeQuantity(item, e.target.innerHTML);
+                    changeQuantity('.category-item__quantity', '.category-item__weight', '.category-item__price', item, e.target.innerHTML);
                 }
 
             });
@@ -76,11 +76,13 @@ $(document).ready ( function(){
     })();
 });
 
-function changeQuantity(product, sign) {
-    const quantity = product.querySelector('.category-item__quantity');
+function changeQuantity(classQuantity, classWeight, classPrice, product, sign) {
+    const quantity = product.querySelector(classQuantity);
     const number = quantity.innerHTML;
-    const weight = product.querySelector('.category-item__weight');
-    const price = product.querySelector('.category-item__price');
+    const weight = product.querySelector(classWeight);
+    const price = product.querySelector(classPrice);
+
+    console.log(quantity, number, weight, price);
 
     if (sign === '+') {
         quantity.innerHTML = +number + 1;
@@ -116,19 +118,48 @@ function addProductToCart(item) {
     const productName = createProduct('p', 'cart-list__name', name, wrapper);
     const productPack = createProduct('span', 'cart-list__pack', pack, wrapper);
 
-    const minus = createProduct('button', "category-item__btn-quantity", "-", cartProduct);
-    const inner = createProduct('div', 'category-item__inner', '', cartProduct);
+    const quantityWrapper = createProduct('div', 'category-item__quantity-wrapper', '', cartProduct)
+    const minus = createProduct('button', "category-item__btn-quantity", "-", quantityWrapper);
+    const inner = createProduct('div', 'category-item__inner', '', quantityWrapper);
     const quantity = createProduct('p', "category-item__quantity", quantityProduct, inner);
     const weight = createProduct('span', "category-item__weight", weightProduct, inner);
-    const plus = createProduct('button',"category-item__btn-quantity", '+', cartProduct);
+    const plus = createProduct('button',"category-item__btn-quantity", '+', quantityWrapper);
 
-    const productPrice = createProduct('div', 'cart-list__price', price, cartProduct);
+    const productPrice = createProduct('div', 'cart-list__price', `${price} руб.`, cartProduct);
 
-    const deleteBtn = createProduct('button', 'cart-list__del', 'X', cartProduct);
+    document.querySelectorAll('.cart-list__product').forEach(item => {
+        item.addEventListener('click', (e) => {
+        if (e.target.className == 'category-item__btn-quantity') {
+            e.stopImmediatePropagation();
+            changeQuantity('.category-item__quantity', '.category-item__weight', '.cart-list__price', item, e.target.innerHTML);
+        }
+    })
+    
+    });
+
+    const deleteBtn = createProduct('button', 'cart-list__del', '', cartProduct);
     deleteBtn.onclick = function() {
         cartProduct.remove();
     }
 }
+
+let observer = new MutationObserver(recalculation);
+observer.observe(cartList, {childList:true, subtree: true});
+
+function recalculation() {
+    document.querySelector('#total-weight').innerHTML = `${summ('.category-item__weight')} гр.`;
+    document.querySelector('#grand-total').innerHTML = `${summ('.cart-list__price')} руб.`;
+}
+
+function summ(unit) {
+    let summ = 0;
+    document.querySelectorAll(unit).forEach(item => {
+        summ += parseInt(item.innerHTML.match(/\d+/));
+    })
+
+    return summ;
+}
+
 // let modal = document.getElementById('modal-price');
 // const btn = document.querySelectorAll(".prices");
 // const span = document.getElementsByClassName("close")[0];
