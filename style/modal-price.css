@@ -56,6 +56,7 @@
 
 @media screen and (max-width: 550px) {
   .modal-price__container {
+    width: 85%;
     padding: 10px 40px;
     border-radius: 40px;
   }
@@ -63,7 +64,7 @@
 
 @media screen and (max-width: 413px) {
   .modal-price__container {
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 30px;
   }
 }
@@ -95,6 +96,21 @@
 @media screen and (max-width: 550px) {
   .modal-price__curls {
     margin: 30px auto 10px;
+  }
+}
+
+.modal-price__info {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 130%;
+  color: #59AC01;
+}
+
+@media screen and (max-width: 550px) {
+  .modal-price__info {
+    font-size: 14px;
   }
 }
 
@@ -133,9 +149,10 @@
 }
 
 .modal-price__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -197,6 +214,7 @@
 }
 
 .modal-price__price {
+  min-width: 65px;
   font-weight: 500;
 }
 

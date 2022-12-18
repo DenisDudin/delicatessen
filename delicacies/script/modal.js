@@ -42,8 +42,8 @@ $(document).ready ( function(){
     
                     const price = document.createElement('p');
                     price.className = 'modal-price__price';
-                    // price.innerHTML = productItem.price + ' руб.';
-                    price.innerHTML = '--- руб.'
+                    price.innerHTML = productItem.price + ' руб/кг';
+                    // price.innerHTML = '--- руб.'
                     product.appendChild(price);
     
                     list.appendChild(product);

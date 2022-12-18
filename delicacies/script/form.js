@@ -2,14 +2,19 @@
 
 
 $(document).ready(function () {
-    $("form").submit(function () {
+    $("#form").submit(function () {
         var formID = $(this).attr('id');
         var formNm = $('#' + formID);
 
+        var data = {
+            action : 'send_message',
+            data_user : formNm.serialize(),
+        };
+
         $.ajax({
             type: "POST",
-            url: '/send.php',
-            data: formNm.serialize(),
+            url: '../delicacies/blocks/ajax/send.php',
+            data: data,
             beforeSend: function () {
                 $(formNm).html('<p style="text-align:center">Отправка...</p>');
             },

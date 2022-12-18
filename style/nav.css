@@ -149,6 +149,26 @@ nav {
   width: 100%;
 }
 
+.nav-links__btn {
+  padding: 7px 20px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #fff;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #700e1e, #851123);
+  -webkit-box-shadow: 8px 8px 20px #b4b0a8, -12px -12px 24px #ffffff;
+          box-shadow: 8px 8px 20px #b4b0a8, -12px -12px 24px #ffffff;
+}
+
+.nav-links__btn:hover {
+  background: #851123;
+  -webkit-box-shadow: inset 20px 20px 18px #640d1a, inset -20px -20px 18px #a6152c;
+          box-shadow: inset 20px 20px 18px #640d1a, inset -20px -20px 18px #a6152c;
+}
+
 .nav-links__phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +187,7 @@ nav {
 
 @media screen and (max-width: 1000px) {
   .nav-links__phone {
+    display: none;
     margin-left: 20px;
     font-size: 1.8rem;
   }

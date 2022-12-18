@@ -300,6 +300,18 @@
   }
 }
 
+.contacts__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 10px;
+}
+
+.contacts__link {
+  width: 35px;
+  height: 35px;
+}
+
 .form {
   position: relative;
 }

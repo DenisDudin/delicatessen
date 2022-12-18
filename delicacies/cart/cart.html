@@ -1,0 +1,257 @@
+<!-- <?php
+$config = include($_SERVER['DOCUMENT_ROOT'].'/delicacies/.config.php');
+?> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/delicacies/img/favicon.ico" />
+    <title>Корзина</title>
+
+    <link href="../../style/cart.css" rel="stylesheet" />
+    <link href="../../style/styles.css" rel="stylesheet" />
+</head>
+<body>
+<nav>
+    <div class="nav-container">
+        <a href="/" class="logo-container">
+            <img
+                    src="/delicacies/img/logo.png"
+                    alt="логотип компании"
+                    class="logo"
+            />
+        </a>
+
+        <div class="nav-links">
+            <a href="/" class="nav-links__item">Главная</a>
+            <a href="/#about" class="nav-links__item">О нас</a>
+            <a href="#contacts" class="nav-links__item">Контакты</a>
+            <a class="nav-links__phone" href="tel: +7 (952) 435-25-05"> +7 (952) 435-25-05</a>
+        </div>
+
+        <label class="menu-container">
+            <input type="checkbox" name="menu-button" onclick="openDrawer();" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="menu-drawer" id="menu-drawer" opened="false">
+            <ul>
+                <a href="/" class="nav-links__item">Главная</a>
+                <a href="/#about" class="nav-links__item">О нас</a>
+                <a href="#contacts" class="nav-links__item">Контакты</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="products">
+    <div class="products-container container">
+        <div id="products-list" class="products-list">
+
+        </div>
+    </div>
+</section>
+
+
+<section class="cart">
+    <div class="cart-background">
+        <div class="cart-container container">
+            <div id="cart-list" class="cart-list">
+
+            </div>
+
+            <div class="cart-purchase">
+                <form id="form-purchase" class="form-purchase" action="" method="post">
+                    <div class="form-purchase__block">
+                        <input
+                                class="form-purchase__input _req"
+                                type="text"
+                                name="name"
+                                id="name-order"
+                                placeholder="Ваше имя"
+                                required
+                        />
+                    </div>
+
+                    <div class="form-purchase__block">
+                        <input
+                                class="form-purchase__input _req _tel"
+                                type="text"
+                                name="tel"
+                                id="tel-order"
+                                placeholder="Телефон"
+                                value=""
+                                required
+                        />
+                    </div>
+
+                    <div class="form-purchase__block">
+                    <textarea
+                            class="form-purchase__msg _req _erorr"
+                            name="message"
+                            id="message-order"
+                            cols="30"
+                            rows="2"
+                            placeholder="Комментарий к заказу"
+                    ></textarea>
+                    </div>
+
+                    <div class="form-purchase__date-container">
+                        <p class="form-purchase__text-date">Дата получения:</p>
+                        <input id="cart-date" class="form-purchase__date" type="date" data-date-inline-picker="true"  name="date" min="" required>
+                    </div>
+
+                    <div class="form-purchase__info">
+                        <div class="form-purchase__weight-container">
+                            <p class="form-purchase__text">Вес заказа:</p>
+                            <p id="total-weight" class="form-purchase__weight">0 гр.</p>
+                        </div>
+
+                        <div class="form-purchase__price-container">
+                            <p class="form-purchase__text-price">Итого к оплате:</p>
+                            <p id="grand-total" class="form-purchase__price">0 руб.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="form-purchase__btn" name="send_message">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="about-phrase">
+    <div class="container">
+        <p class="about-phrase__text">
+            Наш принцип, <span>"Качество основанное на традициях"</span> не пустые слова, и является фундаментом нашего производства.
+        </p>
+    </div>
+</div>
+
+<footer id="contacts" class="contacts scrollto">
+    <div class="container contacts__container">
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__wrapper">
+            <div class="contacts__map-cotainer">
+                <div style="position: relative; overflow: hidden">
+                    <a
+                            href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                            style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 0px;
+                "
+                    ></a
+                    ><a
+                            href="https://yandex.ru/maps/10645/belgorod-oblast/house/narodnaya_ulitsa_139/Z0wYfgJiTEUOQFtqfXRzdX9jZQ==/?ll=35.852509%2C50.824301&utm_medium=mapframe&utm_source=maps&z=16.83"
+                            style="
+                  color: #eee;
+                  font-size: 12px;
+                  position: absolute;
+                  top: 14px;
+                "
+                    ></a
+                    ><iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Abd0a27681cf4ff1cce22af3d3f1f82ca31536c6ae75de6f56cc0b23ed027e66f&amp;source=constructor"
+                            frameborder="1"
+                            allowfullscreen="true"
+                            style="position: relative"
+                    ></iframe>
+
+                </div>
+            </div>
+
+            <div class="contacts__info">
+                <div class="contacts__inner">
+                    <p class="contacts__subtitle">Наш адрес</p>
+                    <p class="contacts__text">
+                        Белгородская область, п.Ракитяное, ул.Народная 139 A
+                    </p>
+                </div>
+
+                <div class="contacts__inner">
+                    <p class="contacts__subtitle">Время работы</p>
+                    <p class="contacts__text">08:00 - 20:00</p>
+
+                    <a class="contacts__phone" href="tel: +7 (952) 435-25-05">+7 (952) 435-25-05</a>
+                    <p class="contacts__mail">delikatesrakitnoe@yandex.ru</p>
+
+                </div>
+
+                <div class="contacts__links">
+                    <a href="https://vk.com/delikatesrakitnoe" class="contacts__link" target="_blank">
+                        <img src="/delicacies/img/vk.svg" alt="vk">
+                    </a>
+
+                    <a href="https://m.ok.ru/group/70000000866141" class="contacts__link" target="_blank">
+                        <img src="/delicacies/img/ok.svg" alt="ok">
+                    </a>
+                </div>
+            </div>
+
+            <div class="contacts__question">
+                <p class="contacts__subtitle">У вас остались вопросы?</p>
+                <p class="contacts__text">
+                    Напишите нам и наш менеджер с радостью на них ответит
+                </p>
+
+                <form id="form" class="form" action="/" method="post">
+                    <div class="form__wrapper">
+                        <div class="form__block">
+                            <input
+                                    class="form__input _req"
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    placeholder="Ваше имя"
+                            />
+                        </div>
+
+                        <div class="form__block">
+                            <input
+                                    class="form__input _req _tel"
+                                    type="text"
+                                    name="tel"
+                                    id="tel"
+                                    placeholder="Телефон"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__block">
+                <textarea
+                        class="form__msg _req _erorr"
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="2"
+                        placeholder="Текст сообщения"
+                ></textarea>
+                    </div>
+
+                    <button type="submit" class="form__btn" name="send_message">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copyright__info">© Copyright, 2022</p>
+    </div>
+</footer>
+
+<script src="/delicacies/script/jquery-2.1.4.js"></script>
+<script src="/delicacies/script/productsCart.js"></script>
+<script src="/delicacies/script/form.js"></script>
+<script src="/delicacies/script/form-cart.js"></script>
+<script src="/delicacies/script/scroll.js"></script>
+<script src="/delicacies/script/burger.js"></script>
+</body>
+</html>

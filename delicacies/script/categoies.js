@@ -70,9 +70,9 @@ $(document).ready ( function(){
 
                             const property = createItem('p',
                             'more-about__characteristic',
-                            `Вес: весовой товар <br>
+                            `Состав: ${element.composition}<br>
                             Срок годности: ${shelfLife}<br> 
-                            <span class="more-about__price">${price} руб.</span>`,
+                            <span class="more-about__price">${price} руб/кг</span> &ensp;*цена в розницу`,
                             characteristics);
                             property.setAttribute('number', index2)
 
