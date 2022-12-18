@@ -220,6 +220,16 @@
             font-size: 1.4rem;
         }
     }
+
+    &__links {
+        display: flex;
+        grid-gap: 10px;
+    }
+
+    &__link {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 
